@@ -8,12 +8,12 @@ pipelines:
           git:
             git: "git@github.com:RiyaCheriyan/hello-world"	
         stages:
-         - build: 
+        - build: 
             clean_workspace: true
             jobs:
               defaultJob:
                 timeout: 0
                 tasks:	          
-                    - exec:
-                       command: ls
-                       runif: passed
+                - exec:
+                     command: ls
+                     runif: passed
