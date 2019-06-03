@@ -3,7 +3,7 @@ pipelines:
   Sample:
     group: demo
         label_template: ${COUNT}
-        lock_behaviour: none
+        lock_behaviour: none                                                                                                           
 	materials:
           git:
            git: git@github.com:RiyaCheriyan/hello-world.git
@@ -11,8 +11,8 @@ pipelines:
          - build:
             clean_workspace: true
             jobs:
-	      defaultjob:
-	          timeout: 0
+	      defaultJob:
+	         timeout: 0
      		  tasks:
                     - exec:
                        command: bash
