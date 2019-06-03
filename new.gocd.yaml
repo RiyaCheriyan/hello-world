@@ -13,7 +13,7 @@ pipelines:
             jobs:
               defaultJob:
                 timeout: 0
-                tasks:	          
+                tasks:
                 - exec:
                      command: ls
                      runif: passed
