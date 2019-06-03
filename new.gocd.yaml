@@ -1,7 +1,7 @@
 format_version: 3
 pipelines:
   "sample":
-    group: default
+    group:
         label_template: "${COUNT}"
         lock_behaviour: none
         materials:
