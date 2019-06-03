@@ -1,8 +1,8 @@
-format_version: 5
+format_version: 3
 pipelines:
-  "Sample":
+  "sample":
     group: default
-        label_template: ${COUNT}
+        label_template: "${COUNT}"
         lock_behaviour: none
         materials:
           git:
