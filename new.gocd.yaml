@@ -1,12 +1,12 @@
 format_version: 3
 pipelines:
   "sample":
-    group:
+     group:
         label_template: "${COUNT}"
         lock_behaviour: none
         materials:
           git:
-           git: git@github.com:RiyaCheriyan/hello-world.git	
+            git: "git@github.com:RiyaCheriyan/hello-world"	
         stages:
          - build: 
             clean_workspace: true
@@ -15,5 +15,5 @@ pipelines:
                 timeout: 0
                 tasks:	          
                     - exec:
-                       command: bash
+                       command: ls
                        runif: passed
