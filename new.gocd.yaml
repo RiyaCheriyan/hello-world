@@ -6,7 +6,7 @@ pipelines:
         lock_behaviour: none
         materials:
           git:
-            git: "git@github.com:RiyaCheriyan/hello-world"	
+           git: git@github.com:RiyaCheriyan/hello-world.git
         stages:
         - build: 
             clean_workspace: true
