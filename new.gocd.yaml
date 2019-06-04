@@ -4,16 +4,14 @@ pipelines:
      group:
         label_template: "${COUNT}"
         lock_behaviour: none
-        materials:
-          git:
+     materials:
+          mygit:
            git: git@github.com:RiyaCheriyan/hello-world.git
-        stages:
+     stages:
         - build: 
             clean_workspace: true
             jobs:
               defaultJob:
-                timeout: 0
                 tasks:
                 - exec:
-                     command: ls
-                     runif: passed
+                     command: make                     
